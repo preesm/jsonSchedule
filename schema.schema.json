@@ -1,0 +1,39 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:testjson:Schedule",
+  "properties" : {
+    "scheduleEntries" : {
+      "type" : "array",
+      "required" : true,
+      "items" : {
+        "type" : "object",
+        "id" : "urn:jsonschema:testjson:ScheduleEntry",
+        "properties" : {
+          "actorName" : {
+            "type" : "string",
+            "required" : true
+          },
+          "singleRateInstanceNumber" : {
+            "type" : "integer",
+            "required" : true
+          },
+          "start" : {
+            "type" : "integer",
+            "required" : true
+          },
+          "end" : {
+            "type" : "integer",
+            "required" : true
+          },
+          "processingElementName" : {
+            "type" : "string",
+            "required" : true
+          },
+          "graphIteration" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}
